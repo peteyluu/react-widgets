@@ -1,0 +1,156 @@
+html, body, h1, h2, h3, h4, p, ul, li, article {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: baseline;
+}
+
+.flex-cont {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.flex-nest-cont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-tabs-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  font-size: 0.5em;
+}
+
+.flex-tabs-cont > * {
+  flex: 1;
+  display: block;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+  border-top: 2px solid black;
+}
+
+.flex-tabs-cont > h1:first-child {
+  border-right: 2px solid black;
+  border-radius: 5px 5px 0 0;
+}
+
+.flex-tabs-cont > h1:nth-child(2) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 5px 5px 0 0;
+}
+
+.flex-tabs-cont > h1:last-child {
+  border-left: 2px solid black;
+  border-radius: 5px 5px 0 0;
+}
+
+.outer-box {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 5px;
+}
+
+.header {
+  padding: 5px 5px 5px 5px;
+}
+
+.inner-box {
+  padding: 5px 5px 5px 5px;
+  border: 2px solid black;
+  width: 300px;
+  height: 50px;
+}
+
+.bg-orange {
+  background-color: #ff9933;
+}
+
+.bg-green {
+  background-color: #90ee90;
+}
+
+.bg-purple {
+  background: linear-gradient(to top, #ccccff 90%, transparent 125px);
+}
+
+.inner-box > * {
+  padding: 5px 5px 5px 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.font-style {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center-helper {
+  line-height: 40px;
+}
+
+.teal-bg {
+  background-color: #00e6e6;
+}
+
+.square-box {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+}
+
+.square-box > input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.auto-li {
+  list-style-type: square;
+  color: #ffffff;
+  margin-left: 45px;
+  font-size: 0.7em;
+  padding: 2px 2px 2px 2px;
+  cursor: pointer;
+}
+
+.title {
+  background-color: #ccccff;
+  cursor: pointer;
+}
+
+.title:hover {
+  background-color: black;
+}
+
+.tabs-box {
+  color: white;
+  border-top: none;
+  border-bottom: 2px solid black;
+  border-radius: 6px 6px 0 0;
+}
+
+.tabs-box > article {
+  line-height: 115px;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}
+
+.border-bottom {
+  border-bottom: 2px solid black;
+}
